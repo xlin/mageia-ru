@@ -1,0 +1,15 @@
+<?php session_start(); ?>
+<html>
+<head>
+  <title>Загрузка файлов на сервер</title>
+</head>
+<body>
+    <form action="build.php" method="post" enctype="multipart/form-data">
+      Укажите имя файла: <br><input type="file" name="filename"><br>
+      Описание пакета: <br><input name=desc maxlength=30 size=30><br>
+      Платформа: <br><input name=arch maxlength=30 size=30><br>
+      <input type="submit" value="Сборка"><br>
+    </form>
+</body>
+</html>
+
